@@ -1,0 +1,44 @@
+// General Footer Styling
+@import 'Main';
+
+.footer{
+    padding: 10px 0;
+    background-color: rgb(219, 212, 195);
+
+    p{
+        font-style: italic;
+        font-weight: $font-bold;
+        letter-spacing: .1px;
+        color: $primary-color;
+    }
+}
+
+.footer__wrapper{
+    @include wrapper;
+    @include flex(center, row);
+}
+
+// Eat This Logo
+
+.footer__brand{
+    @include flex(center, row);
+    text-decoration: none;
+
+    img{
+        width: 10%;
+    }
+
+    h1{
+        font-family: 'Oswald', sans-serif;
+        color: $primary-color;
+        padding-left: 5px;
+        font-size: 24px;
+    }
+}
+
+// Social Links
+
+.fa-footer{
+    padding: 0 10px;
+    color: $primary-color;
+}

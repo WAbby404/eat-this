@@ -1,0 +1,94 @@
+@import 'Main';
+
+.weekday__wrapper{
+    @include wrapper;
+}
+
+.mealPlan__title{
+    font-size: 60px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: $font-bold;
+    color: $primary-color;
+}
+
+.weekday {
+    @include wrapper;
+    // @include border;
+    width: 80%;
+    padding-bottom: 10px;
+    h2{
+        color: $accent-color;
+        padding: 10px;
+        font-size: 30px;
+        font-weight: $font-bold;
+        text-align: center;
+    }
+    h3{
+        font-size: 23px;
+        color: $accent-color;
+        font-weight: $font-bold;
+    }
+    h4{
+        color: $primary-color;
+        width: 100px;
+        text-align: center;
+        font-style: italic;
+        font-size: 20px;
+    }
+    h5{
+        padding: 0 5px;
+        font-size: 12px;
+        font-style: italic;
+    }
+    a{
+        padding-left: 10px;
+        font-size: 14px;
+    }
+    p{
+        padding-right: 10px;
+        font-size: 30px;
+    }
+}
+
+.weekday__bar{
+    padding: 0 5px;
+    font-size: 40px;
+}
+
+.weekday--color{
+    background-color: rgb(247, 244, 239);
+}
+
+.weekday__meals{
+    margin: 0 auto;
+    width: 100%;
+    @include flex(center, column);
+}
+
+.weekday__meal{
+    @include flex(center, row);
+    margin: 10px 0;
+    width: fit-content;
+    padding: 10px;
+}
+
+.meal__details{
+    @include flex(flex-start, row);
+}
+
+.weekday__link{
+    @include btn-link;
+    font-size: 16px;
+    margin: 0;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+.weekday__link:hover{
+    transform: scale(1.1);
+}
+
+.weekday__img{
+    width: 50px;
+    margin-right: 10px;
+}

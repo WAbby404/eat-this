@@ -1,0 +1,59 @@
+// Hero General Styling
+@import 'Main';
+
+.hero{
+    background-image:
+        linear-gradient(to top, rgba(27, 27, 29, 0.705), rgba(255, 255, 255, 0)),
+        url('../images/hero.jpg');
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    z-index: -1;
+    height: 83.9vh;
+}
+
+.hero__wrapper{
+    @include wrapper;
+    @include flex(center, column);
+    padding-top: 150px;
+}
+
+// Hero Text
+
+.hero__title{
+    font-size: 170px;
+    color: $primary-color;
+    font-family: 'Oswald', sans-serif;
+    font-weight: $font-bold;
+}
+
+.hero__subtitle{
+    color: $accent-color;
+    font-size: 35px;
+    font-weight: $font-bold;
+}
+
+.hero__subtitle--small{
+    position: absolute;
+    top: 250px;
+}
+
+// Hero Button
+
+.hero__btn{
+    @include btn-link;
+    margin-top: 30px;
+    transition: all 0.3s ease;
+}
+
+.hero__btn:hover{
+    transform: scale(1.1);
+}
+
+.hero__btn::after{
+    @include hover-line;
+}
+
+.hero__btn:hover::after{
+    @include hover-line-transform;
+}

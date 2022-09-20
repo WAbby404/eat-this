@@ -1,0 +1,58 @@
+@import 'Main';
+.list__wrapper{
+    @include wrapper;
+    width: 40%;
+    padding: 30px;
+
+    h1{
+        font-size: 40px;
+        color: $primary-color;
+        text-align: center;
+        font-family: 'Oswald', sans-serif;
+    }
+}
+
+
+.list__input{
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+}
+
+.list__btn{
+  @include btn-link;
+}
+
+.list__search{
+  margin: 10px 0 20px 0;
+  @include flex(center, row);
+}
+  
+.list__ul{
+  @include flex(space-between, column);
+  // @include border;
+}
+
+.list__items{
+  // @include border;
+  align-self: center;
+  margin: 5px;
+  padding: 10px;
+}
+
+.list__items:nth-child(odd){
+  background-color: rgb(235, 232, 225);
+}
+
+.Listlist__btn{
+  @include btn-link;
+  padding: 5px;
+  margin: 0 5px;
+}
+
+.Listlist__btn:hover{
+  background-color: black;
+}
+

@@ -1,0 +1,53 @@
+// General Navbar Styling
+@import 'Main';
+
+nav{
+    @include flex(center, row);
+    width: 100%;
+    background-color: $primary-color;
+    z-index: 10;
+}
+
+.nav__wrapper{
+    @include flex(space-between, row);
+    width: 90%;
+    margin: .9rem 0;
+}
+
+// Nav Logo & Text Styling
+
+.nav__logo{
+    @include flex(flex-start, row);
+    text-decoration: none;
+
+    img{
+        width: 65px;
+    }
+
+    h2{
+        color: white;
+        font-size: 35px;
+        padding: 0 15px;
+        font-family: 'Oswald', sans-serif;
+    }
+}
+
+// Nav links Styling & Transition
+
+.nav__links{
+    @include flex(flex-end, row);
+}
+
+.nav__link{
+    @include btn-link;
+    transition: all .3s ease;
+}
+
+.nav__link::after{
+    @include hover-line;
+}
+
+.nav__link:hover::after{
+    @include hover-line-transform;
+}
+
