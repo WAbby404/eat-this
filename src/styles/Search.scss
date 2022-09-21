@@ -4,6 +4,7 @@
 .search{
   background-color: rgb(248, 253, 255);
   @include wrapper;
+  min-height: 80.7vh;
 }
 
 .search__title{

@@ -1,16 +1,15 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react'; 
 import Recipe from './Recipe';
 import '../styles/Search.scss'; 
-import config from '../config';
 
 const Search = (props) => {
-  var token = config.MY_API_TOKEN;
-  var key = config.SECRET_API_KEY;
   const [recipes, setRecipes] = useState([]);
   const [search, setSearch] = useState('');
   const [query, setQuery] = useState('chicken');
 
   useEffect(() => {
+    const token = '0686bc8e';
+    const key = `${process.env.REACT_APP_FOOD_API_KEY}`;
     const getRecipes = async () => {
       const response = await fetch(`https://api.edamam.com/api/recipes/v2?type=public&q=${query}&app_id=${token}&app_key=${key}`);
       const data = await response.json();
@@ -30,8 +29,6 @@ const Search = (props) => {
   }
 
   const transferMeal = (meal, weekDay, mealTime) => {
-    // console.log(mealFromRecipe);
-    // console.log('meal From Search');
     props.transferMeal(meal, weekDay, mealTime);
   }
 
