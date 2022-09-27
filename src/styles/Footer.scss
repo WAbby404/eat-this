@@ -22,7 +22,7 @@
 
 .footer__brand{
     @include flex(center, row);
-    text-decoration: none;
+        text-decoration: none;
 
     img{
         width: 10%;
@@ -38,7 +38,36 @@
 
 // Social Links
 
+.footer__socials{
+    @include flex(center, row);
+}
+
 .fa-footer{
     padding: 0 10px;
     color: $primary-color;
+}
+
+@media (max-width: 900px){
+    .footer__wrapper{
+        @include flex(space-between, row);
+        // @include border;
+        width: 95%
+    }
+
+    p{
+        font-size: 14px;
+    }
+
+    .fa-footer{
+        padding: 0 5px;
+    }
+}
+
+@media (max-width: 450px){
+    .footer__brand{
+        img{
+            width: 15%;
+        }
+    }
+
 }

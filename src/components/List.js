@@ -50,7 +50,7 @@ function List(props) {
               value={newItem}
               onChange={e => updateInput(e.target.value)}
             />
-            <button className="list__btn" onClick={() => addItem()}>Add Item</button>
+            <button className="list__search__btn" onClick={() => addItem()}>Add Item</button>
           </div>
 
           <ul className="list__ul">
@@ -58,11 +58,10 @@ function List(props) {
               return(
                 <div className="list__items">
                   <li key={item.id} className="list__li">
-                    {item.value}
-                  
-                  <button className="Listlist__btn" onClick={() => deleteItem(item.id)}>
-                    <i class="fa-solid fa-xmark"></i>
-                  </button>
+                    <div className="list__text">{item.value}</div>
+                    <button className="list__btn" onClick={() => deleteItem(item.id)}>
+                      <i class="fa-solid fa-xmark"></i>
+                    </button>
                   </li>
                 </div>
               )

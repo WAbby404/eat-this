@@ -1,15 +1,13 @@
 @import 'Main';
 .list__wrapper{
     @include wrapper;
-    width: 40%;
+    width: 70%;
     padding: 30px;
     min-height: 83.8vh;
 
     h1{
+      @include title;
         font-size: 40px;
-        color: $primary-color;
-        text-align: center;
-        font-family: 'Oswald', sans-serif;
     }
 }
 
@@ -22,7 +20,7 @@
   font-size: 18px;
 }
 
-.list__btn{
+.list__search__btn{
   @include btn-link;
 }
 
@@ -33,11 +31,13 @@
   
 .list__ul{
   @include flex(space-between, column);
+  list-style-type: none;
   // @include border;
 }
 
 .list__items{
   // @include border;
+  width: 600px;
   align-self: center;
   margin: 5px;
   padding: 10px;
@@ -47,13 +47,46 @@
   background-color: rgb(235, 232, 225);
 }
 
-.Listlist__btn{
+.list__btn{
   @include btn-link;
   padding: 5px;
   margin: 0 5px;
 }
 
-.Listlist__btn:hover{
+.list__btn:hover{
   background-color: black;
 }
 
+.list__li{
+  @include flex(space-between, row);
+}
+
+@media (max-width: 900px){
+
+  .list__items{
+    width: 300px;
+    align-self: center;
+    margin: 5px;
+    padding: 10px;
+  }
+
+  .list__search__btn{
+    padding: 10px;
+  }
+  .list__wrapper{
+    width: 90%;
+
+    h1{
+      font-size: 28px;
+    }
+  }
+
+  .list__btn{
+    font-size: 16px;
+    padding: 5px 5px;
+  }
+
+  .list__text{
+    // width: 80%;
+  }
+}

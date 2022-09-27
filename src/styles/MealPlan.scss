@@ -4,32 +4,29 @@
     @include wrapper;
 }
 
-.mealPlan__title{
+.mealplan__title{
+    @include title;
     font-size: 60px;
-    font-family: 'Oswald', sans-serif;
-    font-weight: $font-bold;
-    color: $primary-color;
 }
 
 .weekday {
     @include wrapper;
-    // @include border;
     width: 80%;
     padding-bottom: 10px;
     h2{
         color: $accent-color;
         padding: 10px;
-        font-size: 30px;
+        font-size: 35px;
         font-weight: $font-bold;
         text-align: center;
     }
     h3{
         font-size: 23px;
-        color: $accent-color;
+        color: $primary-color;
         font-weight: $font-bold;
     }
     h4{
-        color: $primary-color;
+        color: $accent-color;
         width: 100px;
         text-align: center;
         font-style: italic;
@@ -45,7 +42,7 @@
         font-size: 14px;
     }
     p{
-        padding-right: 10px;
+        padding: 10px;
         font-size: 30px;
     }
 }
@@ -68,7 +65,6 @@
 .weekday__meal{
     @include flex(center, row);
     margin: 10px 0;
-    width: fit-content;
     padding: 10px;
 }
 
@@ -91,4 +87,70 @@
 .weekday__img{
     width: 50px;
     margin-right: 10px;
+}
+
+@media (max-width: 900px){
+    .weekday__wrapper{
+       width: 90%;
+    }
+
+    .weekday {
+        width: 100%;
+    }
+
+    .mealplan__title{
+        margin: 30px 0;
+        font-size: 2.5rem;
+    }
+
+}
+
+@media (max-width: 700px){
+    .weekday {
+        @include wrapper;
+        h2{
+            font-size: 40px;
+        }
+
+        h4{
+            font-size: 25px;
+            margin: 5px;
+            font-weight: $font-bold;
+        }
+        text-align: center;
+        width: 90%;
+        margin-bottom: 10px;
+
+    }
+
+    .weekday__meal{
+        @include flex(center, column);
+        // @include border;
+        margin: 6px 0;
+
+        p{
+            display:none;
+        }
+
+        h3{
+            margin: 0 auto;
+            // @include border;
+        }
+    }
+
+    .weekday__img{
+        width: 80px;
+        margin: 5px auto;
+    }
+
+    .meal__details{
+        font-size: 14px;
+        @include flex(center, column);
+        // @include border;
+        margin: 10px 0;
+
+        a{
+            margin-top: 5px;
+        }
+    }
 }

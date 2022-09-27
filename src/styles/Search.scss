@@ -2,17 +2,16 @@
 @import 'Main';
 
 .search{
-  background-color: rgb(248, 253, 255);
   @include wrapper;
+  width: 90%;
   min-height: 80.7vh;
+  overflow-y: none;
 }
 
 .search__title{
+  @include title;
   margin: 30px 0 15px 0;
-  text-align: center;
   font-size: 40px;
-  font-family: 'Oswald', sans-serif;
-  color: $primary-color;
 }
 
 // Search Input Form Styling
@@ -35,23 +34,6 @@
   transition: all 0.3s ease;
 }
 
-.list__btn2{
-  @include btn-link;
-  padding: 5px;
-  margin-left: 100%;
-}
-
-.list__li{
-  align-self:baseline;
-  font-family: 'Oswald', sans-serif;
-  flex: 1;
-}
-
-.list__ul{
-  @include flex(space-between, row);
-  align-items: center;
-}
-
 .search__btn:hover{
   transform: scale(1.1);
 }
@@ -59,9 +41,21 @@
   
 // Recipe Card Layout
 .recipe__cards{
-  display:grid;
+  display: grid;
   grid-template-columns: repeat(auto-fit, 450px);
   justify-content: center;
 }
   
+@media (max-width:900px){
+  .search{
+    width: 95%;
+  }
 
+  .search__title{
+    font-size: 2rem;
+  }
+
+  .recipe__cards{
+    grid-template-columns: repeat(auto-fit, 350px);
+  }
+}

@@ -58,6 +58,8 @@
     right: 0;
     bottom: 0;
     background-color: rgba(0,0,0,0.5);
+    overflow-y: scroll;
+    padding: 20px;
 }
 
 // Overlay Card & X
@@ -107,7 +109,7 @@
 .overlay__text{
     margin: 50px 0 10px 10px;
     text-align: center;
-    width: 80%;
+    width: 90%;
     // overflow-y: scroll;
 
 
@@ -121,11 +123,10 @@
 .overlay__title{
     font-size: 35px;
     font-family: 'Oswald', sans-serif;
-    margin: 0 auto;
-    line-height: 1;
+    margin: 10px auto;
+    line-height: 1.3;
     color: $accent-color;
     font-weight: $font-bold;
-    width: 100%;
 }
 
 /* Overlay Ingredients */
@@ -133,7 +134,17 @@
 .ingredients__title{
     font-family: 'Oswald', sans-serif;
     font-size: 20px;
-    margin: 5px 0 5px 0;
+    margin: 5px 0;
+}
+
+
+.ingredients__check{
+    display:none;
+}
+
+.ingredients__list{
+    max-height: 200px;
+    overflow-y: scroll;
 }
 
 .ingredients{
@@ -153,8 +164,20 @@
     margin: 10px 10px 5px 10px;
 }
 
+.btn-row{
+    @include flex(center, row);
+}
+
+.darkbtn{
+    background-color: rgb(131, 66, 19);
+}
+
 .overlay__buttons:hover{
-    transform: scale(1.1); 
+    transform: scale(1.05); 
+}
+
+.added:active{
+    transform: scale(.95); 
 }
 
 .fa-check{
@@ -169,6 +192,7 @@
     opacity: 0;
     animation: fadeOut 0.3s ease-out;
 }
+
 
 @keyframes fadeIn {
     0% {
@@ -202,4 +226,88 @@
 
 .dont-display{
     display: none;
+}
+
+@media ( max-width: 900px){
+    .overlay{
+        padding: 5px;
+    }
+
+    .recipe-card{
+     
+        h2{
+            font-size: 20px;
+        }
+
+        img{
+            max-width: 120px;
+        }
+    }
+
+    .recipe-card:hover{
+        transform: scale(.95);
+    }
+
+    .overlay__card{
+        width: 95%;
+        margin: 11vh auto 0 auto;
+        @include flex(space-between, column);
+        background-color: aliceblue;
+        border-radius: 10px;
+        position: relative;
+        overscroll-behavior: contain;
+    }
+
+    .overlay__title{
+        font-size: 28px;
+
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        
+    }
+    
+    .overlay__title__container{
+        height: 100vh;
+        overflow: hidden;
+        display: grid;
+        place-items: center;
+    }
+
+    .overlay__img{
+        width: 50%;
+        margin-top: 15px;
+    }
+
+    .overlay__buttons{
+        padding: 6px;
+        font-size: 13px;
+        margin: 5px;
+        width: 160px;
+    }
+
+
+    .ingredients__list{
+        max-height: 100px;
+        overflow-y: scroll;
+    }
+    
+    .meal-plan{
+        width: 90%;
+        height: 230px;
+    }
+
+    .overlay__text{
+        .recipe__info{
+            font-size: 16px;
+            margin-top: 5px;
+        }
+    }
+
+    .fa-check{
+        padding: 0;
+        margin-top: 1rem;
+    }
+
 }

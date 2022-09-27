@@ -27,6 +27,13 @@
     text-decoration: none;
 }
 
+@mixin title{
+    font-family: 'Oswald', sans-serif;
+    font-weight: $font-bold;
+    color: $primary-color;
+    text-align: center;
+}
+
 @mixin hover-line{
     content: "";
     display: block;

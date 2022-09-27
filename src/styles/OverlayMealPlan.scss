@@ -8,7 +8,7 @@
     text-align: center;
     height: 80px;
     margin-top: -12px;
-
+    margin-bottom: -6px;
 }
 .overlay__mealtime{
     height: 100%;
@@ -25,16 +25,6 @@
 .overlay__weekday__btns{
     @include flex(center, row);
     margin-top: 5px;
-}
-
-.highlighted{
-    background-color:rgb(146, 58, 23);
-}
-.meal__btn:active {
-    background-color:rgb(146, 58, 23);
-}
-.meal__btn--clicked{
-    background-color:rgb(146, 58, 23);
 }
 
 .askask3{
@@ -90,4 +80,38 @@
     border-radius: 4px;
     margin: 3px;
     width: 45px;
+}
+
+
+
+
+.btns__show__food{
+    @include flex(center, row);
+}
+
+.overlay__mealtime__btn{
+    height: 100%;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+    background: #ccc;
+    max-width: 80%;
+}
+
+.overlay__btn__text{
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+@media ( max-width: 900px){
+    .overlay__mealtime__btn{
+        max-width: 55%;
+    }
+
+    .overlay__weekdays__title{
+        font-size: 25px;
+    }
 }
