@@ -52,13 +52,7 @@
     transform: scale(1.1);
 }
 
-.hero__btn::after{
-    @include hover-line;
-}
-
-.hero__btn:hover::after{
-    @include hover-line-transform;
-}
+// Responsive 
 
 @media (max-width: 1200px){
     .hero__title{

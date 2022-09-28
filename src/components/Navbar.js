@@ -14,8 +14,8 @@ function Navbar() {
                     <img src={logo} alt="Eat This logo"/>
                     <h2>Eat This</h2>
                 </Link>
-                <i className= {clicked ? "icon fa-solid fa-xmark fa-2x" : "icon fa-solid fa-bars fa-2x"}
-                    onClick={() => setClicked(!clicked)}></i>
+                <i className={clicked ? "icon fa-solid fa-xmark fa-2x" : "icon fa-solid fa-bars fa-2x"}
+                onClick={() => setClicked(!clicked)}></i>
                 <div className={clicked ? "nav__links active" : "nav__links"}>
                     <Link to="/" className="nav__link" onClick={() => setClicked(false)}>Home</Link>
                     <Link to="/search" className="nav__link" onClick={() => setClicked(false)}>Search Recipies</Link>

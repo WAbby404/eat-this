@@ -1,3 +1,4 @@
+// General MealPlan Styling
 @import 'Main';
 
 .weekday__wrapper{
@@ -9,10 +10,11 @@
     font-size: 60px;
 }
 
-.weekday {
+.weekday{
     @include wrapper;
     width: 80%;
     padding-bottom: 10px;
+
     h2{
         color: $accent-color;
         padding: 10px;
@@ -20,11 +22,13 @@
         font-weight: $font-bold;
         text-align: center;
     }
+
     h3{
         font-size: 23px;
         color: $primary-color;
         font-weight: $font-bold;
     }
+
     h4{
         color: $accent-color;
         width: 100px;
@@ -32,15 +36,18 @@
         font-style: italic;
         font-size: 20px;
     }
+
     h5{
         padding: 0 5px;
         font-size: 12px;
         font-style: italic;
     }
+
     a{
         padding-left: 10px;
         font-size: 14px;
     }
+
     p{
         padding: 10px;
         font-size: 30px;
@@ -88,6 +95,8 @@
     width: 50px;
     margin-right: 10px;
 }
+
+// Responsive
 
 @media (max-width: 900px){
     .weekday__wrapper{

@@ -1,4 +1,7 @@
 @import 'Main';
+
+// List Form Styling
+
 .list__wrapper{
     @include wrapper;
     width: 70%;
@@ -11,6 +14,10 @@
     }
 }
 
+.list__search{
+  margin: 10px 0 20px 0;
+  @include flex(center, row);
+}
 
 .list__input{
   margin-right: 10px;
@@ -24,19 +31,14 @@
   @include btn-link;
 }
 
-.list__search{
-  margin: 10px 0 20px 0;
-  @include flex(center, row);
-}
+// List Styling
   
 .list__ul{
   @include flex(space-between, column);
   list-style-type: none;
-  // @include border;
 }
 
 .list__items{
-  // @include border;
   width: 600px;
   align-self: center;
   margin: 5px;
@@ -61,6 +63,8 @@
   @include flex(space-between, row);
 }
 
+// Responsive
+
 @media (max-width: 900px){
 
   .list__items{
@@ -84,9 +88,5 @@
   .list__btn{
     font-size: 16px;
     padding: 5px 5px;
-  }
-
-  .list__text{
-    // width: 80%;
   }
 }

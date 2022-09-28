@@ -14,6 +14,11 @@
     transition: all .3s ease;
     cursor: pointer;
 
+    .recipe__text{
+        margin: 0 auto;
+        padding-right: 10px;
+    }
+    
     .recipe__info{
         font-size: 14px;
         margin-top: 7px;
@@ -31,10 +36,7 @@
         max-width: 150px;
     }
 
-    .recipe__text{
-        margin: 0 auto;
-        padding-right: 10px;
-    }
+
 }
 
 .recipe-card:hover{
@@ -110,8 +112,6 @@
     margin: 50px 0 10px 10px;
     text-align: center;
     width: 90%;
-    // overflow-y: scroll;
-
 
     .recipe__info{
         font-size: 18px;
@@ -137,11 +137,6 @@
     margin: 5px 0;
 }
 
-
-.ingredients__check{
-    display:none;
-}
-
 .ingredients__list{
     max-height: 200px;
     overflow-y: scroll;
@@ -157,15 +152,15 @@
 
 // Overlay Buttons
 
+.btn-row{
+    @include flex(center, row);
+}
+
 .overlay__buttons{
     @include btn-link;
     padding: 10px;
     font-size: 14px;
     margin: 10px 10px 5px 10px;
-}
-
-.btn-row{
-    @include flex(center, row);
 }
 
 .darkbtn{
@@ -179,38 +174,6 @@
 .added:active{
     transform: scale(.95); 
 }
-
-.fa-check{
-    color: $primary-color;
-    position:absolute;
-    padding-top: 10px;
-    opacity: 0.9;
-    // animation: fadeIn 0.3s ease-in;
-}
-
-.check-disappear{
-    opacity: 0;
-    animation: fadeOut 0.3s ease-out;
-}
-
-
-@keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 0.9;
-    }
-  }
-  
-  @keyframes fadeOut {
-    0% {
-      opacity: 0.9;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
 
 /* Meal Plan */
 
@@ -227,6 +190,8 @@
 .dont-display{
     display: none;
 }
+
+// Responsive
 
 @media ( max-width: 900px){
     .overlay{
@@ -260,19 +225,10 @@
 
     .overlay__title{
         font-size: 28px;
-
         width: 100%;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        
-    }
-    
-    .overlay__title__container{
-        height: 100vh;
-        overflow: hidden;
-        display: grid;
-        place-items: center;
     }
 
     .overlay__img{
@@ -286,7 +242,6 @@
         margin: 5px;
         width: 160px;
     }
-
 
     .ingredients__list{
         max-height: 100px;
@@ -303,11 +258,6 @@
             font-size: 16px;
             margin-top: 5px;
         }
-    }
-
-    .fa-check{
-        padding: 0;
-        margin-top: 1rem;
     }
 
 }

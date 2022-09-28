@@ -38,13 +38,15 @@
   transform: scale(1.1);
 }
   
-  
 // Recipe Card Layout
+
 .recipe__cards{
   display: grid;
   grid-template-columns: repeat(auto-fit, 450px);
   justify-content: center;
 }
+
+// Responsive Design
   
 @media (max-width:900px){
   .search{

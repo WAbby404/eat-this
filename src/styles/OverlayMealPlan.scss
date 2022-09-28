@@ -1,18 +1,13 @@
+// General Styling
 @import 'Main';
 
-.overlay__wrapper{
-}
-
+// Overlay Weekdays
 .overlay__weekdays{
     @include flex(center, column);
     text-align: center;
     height: 80px;
     margin-top: -12px;
     margin-bottom: -6px;
-}
-.overlay__mealtime{
-    height: 100%;
-    width: 100%;
 }
 
 .overlay__weekdays__title{
@@ -27,17 +22,20 @@
     margin-top: 5px;
 }
 
-.askask3{
-    content: "";
-    display: inline-block;
-    position: relative;
-    width: 5px;
-    height: 16px;
-    background-color: rgb(221, 55, 105);
-    margin: 2px;
+.meal__btn{
+    @include btn-link;
+    font-size: 25px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin: 3px;
+    width: 45px;
 }
 
+// Overlay MealTimes
+
 .overlay__mealtime{
+    height: 100%;
+    width: 100%;
     margin: 9px 0;
 
     h1{
@@ -54,18 +52,6 @@
         color: $accent-color;
     }
 
-    .overlay__mealtime__btns{
-        text-align: center;
-    }
-
-    .overlay__mealtime__btn{
-        @include btn-link;
-        padding: 5px;
-        font-size: 14px;
-        color: white;
-        margin: 2px;
-    }
-
     h2{
         color: $accent-color;
         font-size: 20px;
@@ -73,28 +59,28 @@
     }
 }
 
-.meal__btn{
-    @include btn-link;
-    font-size: 25px;
-    padding: 5px 10px;
-    border-radius: 4px;
-    margin: 3px;
-    width: 45px;
+.overlay__mealtime__btns{
+    text-align: center;
 }
 
+.overlay__mealtime__btn{
 
-
+}
 
 .btns__show__food{
     @include flex(center, row);
 }
 
 .overlay__mealtime__btn{
+    @include btn-link;
+    padding: 5px;
+    font-size: 14px;
+    color: white;
+    margin: 2px;
     height: 100%;
     overflow: hidden;
     display: grid;
     place-items: center;
-    background: #ccc;
     max-width: 80%;
 }
 
@@ -105,6 +91,7 @@
     text-overflow: ellipsis;
 }
 
+// Responsive
 
 @media ( max-width: 900px){
     .overlay__mealtime__btn{

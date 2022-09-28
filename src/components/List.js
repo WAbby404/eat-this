@@ -42,7 +42,7 @@ function List(props) {
 
     return (
         <div className="list__wrapper">
-          <h1 className="list__title">Add items to Grocery List</h1>
+          <h1>Add items to Grocery List</h1>
           <div className="list__search">
             <input className="list__input"
               type='text'

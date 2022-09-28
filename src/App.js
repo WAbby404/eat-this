@@ -31,16 +31,14 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <body className="help">
-          <Navbar/>
-          <Routes>
-            <Route path="/" element={<Home/>}></Route>
-            <Route path="/search" element={<Search transferMeal={transferMeal} transferIngredients={transferIngredients} mealPlan={mealPlan}/>}></Route>
-            <Route path="/mealplan" element={<MealPlan mealPlan={mealPlan} />}></Route>
-            <Route path="/list" element={<List ingredients={ingredientList} transferIngredients={transferIngredients}/>}></Route>
-          </Routes>
-          <Footer/>
-        </body>
+        <Navbar/>
+        <Routes>
+          <Route path="/" element={<Home/>}></Route>
+          <Route path="/search" element={<Search transferMeal={transferMeal} transferIngredients={transferIngredients} mealPlan={mealPlan}/>}></Route>
+          <Route path="/mealplan" element={<MealPlan mealPlan={mealPlan} />}></Route>
+          <Route path="/list" element={<List ingredients={ingredientList} transferIngredients={transferIngredients}/>}></Route>
+        </Routes>
+        <Footer/>
       </div>
     </Router>
 

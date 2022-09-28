@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../styles/OverlayMealPlan.scss';
 
 function OverlayMealPlan(props) {
@@ -42,11 +41,11 @@ function OverlayMealPlan(props) {
             <div className="overlay__weekdays">
                 <h1 className="overlay__weekdays__title">Select a Day</h1>
                 <div className="overlay__weekday__btns">
-                    <button className={`meal__btn`} onClick={() => fixWeekday(0)}>M</button>
-                    <button className={`meal__btn`} onClick={() => fixWeekday(1)}>T</button>
-                    <button className={`meal__btn`} onClick={() => fixWeekday(2)}>W</button>
-                    <button className={`meal__btn`} onClick={() => fixWeekday(3)}>Th</button>
-                    <button className={`meal__btn`} onClick={() => fixWeekday(4)}>F</button>
+                    <button className="meal__btn" onClick={() => fixWeekday(0)}>M</button>
+                    <button className="meal__btn" onClick={() => fixWeekday(1)}>T</button>
+                    <button className="meal__btn" onClick={() => fixWeekday(2)}>W</button>
+                    <button className="meal__btn" onClick={() => fixWeekday(3)}>Th</button>
+                    <button className="meal__btn" onClick={() => fixWeekday(4)}>F</button>
                 </div>
             </div>
             { day &&
@@ -55,7 +54,7 @@ function OverlayMealPlan(props) {
                 <div className="overlay__mealtime__btns">
                     <div className="btns__show__food">
                         <h2>Breakfast - </h2>
-                        <button className='overlay__mealtime__btn'
+                        <button className="overlay__mealtime__btn"
                             onClick={() => transferMeal(props.recipe, dayNum, 0)}>
                             <div className="overlay__btn__text">{mealPlan[dayNum][0][3] ?? "Add to Breakfast"}</div>
                         </button>
