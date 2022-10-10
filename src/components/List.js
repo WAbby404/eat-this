@@ -5,6 +5,7 @@ function List(props) {
     const items = props.ingredients ;
     const [listItems, setListItems] = useState([]);
     const [newItem, setNewItem] = useState('');
+    const [edit, setEdit] = useState('');
 
     useEffect(() => {
         const list = items;
@@ -40,6 +41,11 @@ function List(props) {
         setListItems(updatedList);
     }
 
+    const updateItem = (itemsID) => {
+      setEdit(itemsID);
+
+    }
+
     return (
         <div className="list__wrapper">
           <h1>Add items to Grocery List</h1>
@@ -58,10 +64,15 @@ function List(props) {
               return(
                 <div className="list__items">
                   <li key={item.id} className="list__li">
-                    <div className="list__text">{item.value}</div>
-                    <button className="list__btn" onClick={() => deleteItem(item.id)}>
-                      <i class="fa-solid fa-xmark"></i>
-                    </button>
+                    <div className="list__text">{edit === item.id ? <input></input> : 'item.value'}</div>
+                      <div className="list__btns">
+                        <button className="list__btn" onClick={() => updateItem(item.id)}>
+                          <i className="fa-solid fa-pencil"></i>
+                        </button>
+                        <button className="list__btn" onClick={() => deleteItem(item.id)}>
+                          <i className="fa-solid fa-xmark"></i>
+                        </button>
+                      </div>
                   </li>
                 </div>
               )

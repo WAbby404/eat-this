@@ -7,6 +7,7 @@ function OverlayMealPlan(props) {
     const [mealPlan, setMealPlan] = useState(props.mealPlan);
     const weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
     const [value, setValue] = useState(0);
+    const [selected, setSelected] = useState()
 
 
     useEffect(( ) => {
@@ -18,6 +19,8 @@ function OverlayMealPlan(props) {
     const fixWeekday = (dayNum) => {
         setDayNum(dayNum);
         setDay(weekdays[dayNum]);
+
+        setSelected(dayNum);
     };
 
     const transferMeal = (meal, weekDay, mealTime) => {
@@ -41,11 +44,11 @@ function OverlayMealPlan(props) {
             <div className="overlay__weekdays">
                 <h1 className="overlay__weekdays__title">Select a Day</h1>
                 <div className="overlay__weekday__btns">
-                    <button className="meal__btn" onClick={() => fixWeekday(0)}>M</button>
-                    <button className="meal__btn" onClick={() => fixWeekday(1)}>T</button>
-                    <button className="meal__btn" onClick={() => fixWeekday(2)}>W</button>
-                    <button className="meal__btn" onClick={() => fixWeekday(3)}>Th</button>
-                    <button className="meal__btn" onClick={() => fixWeekday(4)}>F</button>
+                    <button className={`meal__btn ${selected === 0 ? 'darkbtn' : ''}`} onClick={() => fixWeekday(0)}>M</button>
+                    <button className={`meal__btn ${selected === 1 ? 'darkbtn' : ''}`} onClick={() => fixWeekday(1)}>T</button>
+                    <button className={`meal__btn ${selected === 2 ? 'darkbtn' : ''}`} onClick={() => fixWeekday(2)}>W</button>
+                    <button className={`meal__btn ${selected === 3 ? 'darkbtn' : ''}`} onClick={() => fixWeekday(3)}>Th</button>
+                    <button className={`meal__btn ${selected === 4 ? 'darkbtn' : ''}`} onClick={() => fixWeekday(4)}>F</button>
                 </div>
             </div>
             { day &&
