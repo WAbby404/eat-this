@@ -1,15 +1,15 @@
 # Eat This
-<img src="public/eat-this-logo-big.jpg" alt="Eat This Logo" width="500"/>
+<img src="public/eat-this-logo-big.png" alt="Eat This Logo" width="500"/>
 A Web App built to help you find recipies, fit them into a meal plan, and add their ingredients to shopping lists.
 Features include:
-* Uses Edamam API to retrieve information about recipies & displays them as a component
-* Searches for recipies based on an ingredient 
-* Displays recipie cards that can schedule the recipie into your meal plan
-* Users can add recipie ingredients to a shopping list
-* Users can add and remove items from the grogcery list
-* Sass 
-* Fully Responsive Design.
-* Custom logo! Made by me :)
+* Uses Edamam API to retrieve information about recipies & displays them as a component<br/>
+* Searches for recipies based on an ingredient <br/>
+* Displays recipie cards that can schedule the recipie into your meal plan<br/>
+* Users can add recipie ingredients to a shopping list<br/>
+* Users can add and remove items from the grogcery list<br/>
+* Sass <br/>
+* Fully Responsive Design.<br/>
+* Custom logo! Made by me :)<br/>
      
 ## Deployed On Netlify
 
