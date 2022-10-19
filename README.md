@@ -15,7 +15,7 @@ Features include: <br/>
 <a href="Website name once i get one">Eat This</a>
 
 Eat this as a tool used to find recipes, plan your weekly meals, and to make grocery lists based on those recipes.<br/>
-<img/><br/>
+<img src="src/images/readme home1.jpg" alt="Eat This Homepage" width="700"/><br/>
 The Search page floods with recipes on recipe cards, and a search box taking input to search for recpies.<br/>
 <img/><br/>
 Recipe cards show you all about the recipe, each has an overlay that goes into more detail, including the option to adding the recipe to your meal plan or shopping list</br>
@@ -38,8 +38,8 @@ Responsive Design all throughout
 * Responsive Design
 
 ## About Me
-I hope you enjoyed my site! 
-I am looking for a job currently and would love to hear from you, so feel free to reach out. <br/>
+I hope you enjoyed my site! <br/>
+I am currently open  and would love to hear from you, so feel free to reach out. <br/>
 These are my socials: <br/>
 <a href="mailto:Wabby.404@gmail.com">Wabby.404@gmail.com</a> <br/>
 <a href="https://wabby404.github.io/portfolio-redo/" target="_blank" rel="noopener noreferrer">Portfolio Site</a> <br/>

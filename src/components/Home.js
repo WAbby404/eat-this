@@ -7,7 +7,7 @@ function Home() {
         <main className="hero">
             <div className="hero__wrapper">
                 <>
-                    <h3 className="hero__subtitle hero__subtitle--small">Lets</h3>
+                    <h3 className="hero__subtitle hero__subtitle--small">Let's</h3>
                     <h2 className="hero__title">Eat This</h2>
                 </>
                 <h1 className="hero__subtitle">Find Recipes. Plan Your Meals. Make Grocery Lists.</h1>

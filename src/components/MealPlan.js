@@ -6,7 +6,6 @@ function MealPlan(props) {
     const weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
     const mealTimes = ['Breakfast', 'Lunch', 'Dinner'];
 
-
     return (
         <div className="weekday__wrapper">
             <h1 className="mealplan__title">Your Meal Plan</h1>
@@ -28,7 +27,7 @@ function MealPlan(props) {
                                                     <h3>{weekday[mealNum][3]}</h3>
                                                     <div className="meal__details">
                                                         <h5>{weekday[mealNum][4] === 0 ? '20 min' : `${weekday[mealNum][4]} min`} | {parseInt(weekday[mealNum][0])} Cal | Yields {weekday[mealNum][5]}</h5>
-                                                        <a href={weekday[mealNum][6]} target="_blank" rel="noopener noreferrer">Link to Original Recipe</a>
+                                                        <a href={weekday[mealNum][6]} target="_blank" rel="noopener noreferrer">Original Recipe</a>
                                                     </div>
                                                 </div>
                                             </>
