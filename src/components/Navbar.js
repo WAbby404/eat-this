@@ -18,7 +18,7 @@ function Navbar() {
                 onClick={() => setClicked(!clicked)}></i>
                 <div className={clicked ? "nav__links active" : "nav__links"}>
                     <Link to="/" className="nav__link" onClick={() => setClicked(false)}>Home</Link>
-                    <Link to="/search" className="nav__link" onClick={() => setClicked(false)}>Search Recipies</Link>
+                    <Link to="/search" className="nav__link" onClick={() => setClicked(false)}>Search Recipes</Link>
                     <Link to="/mealplan" className="nav__link" onClick={() => setClicked(false)}>Meal Plan</Link>
                     <Link to="/list" className="nav__link" onClick={() => setClicked(false)}>Shopping List</Link>
                 </div>

@@ -28,12 +28,12 @@ function MealPlan(props) {
                                                     <h3>{weekday[mealNum][3]}</h3>
                                                     <div className="meal__details">
                                                         <h5>{weekday[mealNum][4] === 0 ? '20 min' : `${weekday[mealNum][4]} min`} | {parseInt(weekday[mealNum][0])} Cal | Yields {weekday[mealNum][5]}</h5>
-                                                        <a href={weekday[mealNum][6]} target="_blank" rel="noopener noreferrer">Link to Original Recipie</a>
+                                                        <a href={weekday[mealNum][6]} target="_blank" rel="noopener noreferrer">Link to Original Recipe</a>
                                                     </div>
                                                 </div>
                                             </>
                                     : 
-                                        <Link className="weekday__link" to="/search">Add Meal in Search Recipies</Link>
+                                        <Link className="weekday__link" to="/search">Add Meal in Search Recipes</Link>
                                     }
                                     </div>
                                 )

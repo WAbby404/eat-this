@@ -49,7 +49,7 @@ const Search = (props) => {
         <button type="submit" className="search__btn">Search</button>
       </form>
       <div className="recipe__cards">
-        { !recipes ? <p>Recipies loading..</p> :
+        { !recipes ? <p>rRecipes loading..</p> :
         recipes.map((recipe, index) => {
           return(
             <Recipe

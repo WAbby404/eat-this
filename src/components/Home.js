@@ -10,7 +10,7 @@ function Home() {
                     <h3 className="hero__subtitle hero__subtitle--small">Lets</h3>
                     <h2 className="hero__title">Eat This</h2>
                 </>
-                <h1 className="hero__subtitle">Find Recipies. Plan Your Meals. Make Grocery Lists.</h1>
+                <h1 className="hero__subtitle">Find Recipes. Plan Your Meals. Make Grocery Lists.</h1>
                 <Link to="/search" className="hero__btn">Get Started</Link>
             </div>
         </main>
