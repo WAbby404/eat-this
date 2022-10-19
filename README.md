@@ -38,8 +38,8 @@ Responsive Design all throughout
 
 ## About Me
 I hope you enjoyed my site! 
-I am looking for a job currently and would love to hear from you, so feel free to reach out.
-These are my socials:
+I am looking for a job currently and would love to hear from you, so feel free to reach out. <br/>
+These are my socials: <br/>
 <a href="mailto:Wabby.404@gmail.com">Wabby.404@gmail.com</a> <br/>
 <a href="https://wabby404.github.io/portfolio-redo/" target="_blank" rel="noopener noreferrer">Portfolio Site</a> <br/>
 <a href="https://github.com/WAbby404" target="_blank" rel="noopener noreferrer">Github - WAbby404</a> <br/>
