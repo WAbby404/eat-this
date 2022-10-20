@@ -22,15 +22,17 @@ The Search page floods with recipes on recipe cards, and a search box taking inp
 <br/>
 Recipe cards show info about the recipe, each with an overlay that lets you add the recipe to your meal plan or shopping list</br>
 <img src="src/images/readme card3.jpg" alt="Eat This Recipe Card" width="800"/><br/>
-Meal Plan shows you what you will eat on a weeekday basis based on what youve selected on the Search tab.<br/>
 <br/>
+Meal Plan shows you what you will eat on a weeekday basis based on what youve selected on the Search tab.<br/>
 <img src="src/images/readme meals4.jpg" alt="Eat This Recipe Card" width="800"/><br/>
-The Shopping list is a list made from all the recipes added on the Search tab.
+<br/>
+The Shopping list is a list made from all the recipes added on the Search tab.<br/>
 <img src="src/images/readme list5.jpg" alt="Eat This Recipe Card" width="800"/><br/>
 <br/>
-Responsive Design all throughout
-<br/>
+Responsive Design all throughout<br/>
 <img src="src/images/readme responsive6.jpg" alt="Eat This Recipe Card" width="800"/><br/>
+<br/>
+
 
 ## Tech used
 * React
