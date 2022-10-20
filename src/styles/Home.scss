@@ -71,7 +71,7 @@
         width: 100%;
         background-size: cover;
         z-index: -1;
-        height: 83.9vh;
+        height: 81.7vh;
         min-height: 350px;
     }
     
@@ -94,6 +94,9 @@
 }
 
 @media (max-width: 400px){
+    .hero{
+        height: 78vh;
+    }
     .hero__title{
         font-size: 5rem;
     }
