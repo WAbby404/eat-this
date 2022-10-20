@@ -1,12 +1,12 @@
 # Eat This
-<img src="public/eat-this-logo-big.png" alt="Eat This Logo" width="500"/>
+<img src="public/eat-this-logo-big.png" alt="Eat This Logo" width="800"/>
 A Web App built to help you find recipes, fit them into a meal plan, and add their ingredients to shopping lists.
 Features include: <br/>
 * Uses Edamam API to retrieve information about recipes<br/>
 * Search for recipes based on an ingredient <br/>
 * Displays recipe cards that can schedule the recipe into your meal plan<br/>
 * Users can add recipe ingredients to a shopping list<br/>
-* Users can add and remove items from the grogcery list<br/>
+* Users can add and remove items from the grocery list<br/>
 * Responsive Design<br/>
 * Custom logo! Made by me :)<br/>
      
@@ -50,3 +50,4 @@ These are my socials: <br/>
 <a href="https://wabby404.github.io/portfolio-redo/" target="_blank" rel="noopener noreferrer">Portfolio Site</a> <br/>
 <a href="https://github.com/WAbby404" target="_blank" rel="noopener noreferrer">Github</a> <br/>
 <a href="https://www.linkedin.com/in/abbywaddell4042/" target="_blank" rel="noopener noreferrer">Linkedin</a> <br/>
+
