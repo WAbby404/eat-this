@@ -44,7 +44,8 @@ Responsive Design all throughout
 
 ## About Me
 I hope you enjoyed my site! <br/>
-I am currently open  and would love to hear from you, so feel free to reach out. <br/>
+I'm currently searching for a new career opportunity in Web Development and would love to hear from you, so feel free to reach out. <br/>
+Thank you for checking out my work! <br/>
 These are my socials: <br/>
 <a href="mailto:Wabby.404@gmail.com">Wabby.404@gmail.com</a> <br/>
 <a href="https://wabby404.github.io/portfolio-redo/" target="_blank" rel="noopener noreferrer">Portfolio Site</a> <br/>
