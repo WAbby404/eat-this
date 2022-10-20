@@ -14,6 +14,13 @@
   font-size: 40px;
 }
 
+.search__notfound{
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 25px;
+  color: $accent-color;
+}
+
 // Search Input Form Styling
 
 .search__form{

@@ -49,6 +49,11 @@
   background-color: rgb(235, 232, 225);
 }
 
+.list__text{
+  color: $accent-color;
+  font-weight: $font-bold;
+}
+
 
 .list__btn{
   @include btn-link;

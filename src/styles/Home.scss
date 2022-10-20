@@ -9,14 +9,12 @@
     width: 100%;
     background-size: cover;
     z-index: -1;
-    height: 83.9vh;
-    min-height: 350px;
 }
 
 .hero__wrapper{
     @include wrapper;
     @include flex(center, column);
-    padding-top: 150px;
+    padding: 150px 0 13% 0;
 }
 
 // Hero Text

@@ -5,7 +5,6 @@ function List(props) {
     const items = props.ingredients ;
     const [listItems, setListItems] = useState([]);
     const [newItem, setNewItem] = useState('');
-    const [edit, setEdit] = useState('');
 
     useEffect(() => {
         const list = items;

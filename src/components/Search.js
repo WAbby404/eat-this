@@ -15,7 +15,6 @@ const Search = (props) => {
       const data = await response.json();
       setRecipes(data.hits);
     }
-    
     getRecipes();
   }, [query])
 
@@ -49,7 +48,7 @@ const Search = (props) => {
         <button type="submit" className="search__btn">Search</button>
       </form>
       <div className="recipe__cards">
-        { !recipes ? <p>rRecipes loading..</p> :
+        { recipes.length === 0 ? <div className="search__notfound">Recipes loading..</div> :
         recipes.map((recipe, index) => {
           return(
             <Recipe
