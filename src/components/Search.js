@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'; 
 import Recipe from './Recipe';
 import '../styles/Search.scss'; 
+import FOOD_API from '../apikey.js';
 
 const Search = (props) => {
   const [recipes, setRecipes] = useState([]);
@@ -8,16 +9,10 @@ const Search = (props) => {
   const [query, setQuery] = useState('chicken');
 
   useEffect(() => {
-    const token = '0686bc8e';
-    const key = `${process.env.REACT_APP_FOOD_API_KEY}`;
+    const token = `${FOOD_API.token}`;
+    const key = `${FOOD_API.key}`;
     const getRecipes = async () => {
-
       const response = await fetch(`https://api.edamam.com/api/recipes/v2?type=public&q=${query}&app_id=${token}&app_key=${key}`);
-
-
-
-
-      // const response = await fetch(`https://api.edamam.com/api/recipes/v2?type=public&q=${query}&app_id=${token}&app_key=${key}`);
       const data = await response.json();
       setRecipes(data.hits);
     }
