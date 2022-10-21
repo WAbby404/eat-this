@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'; 
 import Recipe from './Recipe';
 import '../styles/Search.scss'; 
-// import FOOD_API_KEY from '../apikey.js';
+import FOOD_API_KEY from './apikey.js';
 
 const Search = (props) => {
   const [recipes, setRecipes] = useState([]);
@@ -10,9 +10,9 @@ const Search = (props) => {
 
   useEffect(() => {
     const token = `0686bc8e`;
-    // const key = `${FOOD_API_KEY}`;
+    const key = `${FOOD_API_KEY}`;
 
-    const key = `46513ce9ebc74298b34f8b6d45abdf3f`;
+    // const key = `46513ce9ebc74298b34f8b6d45abdf3f`;
 
 
 
