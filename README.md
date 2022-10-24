@@ -10,9 +10,10 @@ Features include: <br/>
 * Responsive Design<br/>
 * Custom logo made by me :)<br/>
      
-## Deployed On Netlify
+## Deployed On Netlify - <a href="https://eat-this-abbyw.netlify.app/" target="_blank" rel="noopener noreferrer" >Eat This</a>
 
-<a href="https://eat-this-abbyw.netlify.app/">Eat This</a>
+
+<a href="https://eat-this-abbyw.netlify.app/" target="_blank" rel="noopener noreferrer" >Eat This</a>
 
 Eat this as a tool used to find recipes, plan your weekly meals, and to make grocery lists based on those recipes.<br/>
 <img src="src/images/readme home1.jpg" alt="Eat This Homepage" width="800"/><br/>
