@@ -12,7 +12,7 @@ Features include: <br/>
      
 ## Deployed On Netlify
 
-<a href="Website name once i get one">Eat This</a>
+<a href="https://eat-this-abbyw.netlify.app/">Eat This</a>
 
 Eat this as a tool used to find recipes, plan your weekly meals, and to make grocery lists based on those recipes.<br/>
 <img src="src/images/readme home1.jpg" alt="Eat This Homepage" width="800"/><br/>
