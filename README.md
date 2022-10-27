@@ -10,10 +10,10 @@ Features include: <br/>
 * Responsive Design<br/>
 * Custom logo made by me :)<br/>
      
-## Deployed On Netlify - <a href="https://eat-this-abbyw.netlify.app/" target="_blank" rel="noopener noreferrer" >Eat This</a>
+## Deployed On Netlify - <a href="https://eat-this-abbyw.netlify.app/">Eat This</a>
 
 
-<a href="https://eat-this-abbyw.netlify.app/" target="_blank" rel="noopener noreferrer" >Eat This</a>
+<a href="https://eat-this-abbyw.netlify.app/">Eat This</a>
 
 Eat this as a tool used to find recipes, plan your weekly meals, and to make grocery lists based on those recipes.<br/>
 <img src="src/images/readme home1.jpg" alt="Eat This Homepage" width="800"/><br/>
@@ -50,9 +50,9 @@ Thank you for checking out my work, I hope you enjoyed my site! <br/>
 I'm currently searching for a new career opportunity in Web Development and would love to hear from you, so feel free to reach out. <br/>
 These are my socials: <br/>
 <a href="mailto:Wabby.404@gmail.com">Wabby.404@gmail.com</a> <br/>
-<a href="https://wabby404.github.io/portfolio-redo/" target="_blank" rel="noopener noreferrer">Portfolio Site</a> <br/>
-<a href="https://github.com/WAbby404" target="_blank" rel="noopener noreferrer">Github</a> <br/>
-<a href="https://www.linkedin.com/in/abbywaddell4042/" target="_blank" rel="noopener noreferrer">Linkedin</a> <br/>
+<a href="https://wabby404.github.io/portfolio-redo/">Portfolio Site</a> <br/>
+<a href="https://github.com/WAbby404">Github</a> <br/>
+<a href="https://www.linkedin.com/in/abbywaddell4042/">Linkedin</a> <br/>
 
 
 
