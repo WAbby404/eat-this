@@ -20,16 +20,16 @@ nav{
     @include flex(flex-start, row);
     text-decoration: none;
 
-    img{
-        width: 65px;
-    }
-
     h2{
         color: white;
         font-size: 35px;
         padding: 0 15px;
         font-family: 'Oswald', sans-serif;
     }
+}
+
+.nav__logo__img{
+    width: 65px;
 }
 
 // Nav links Styling & Transition

@@ -13,9 +13,15 @@ function Footer() {
                     <h1>Eat This</h1>
                 </Link>
                 <div className="footer__socials">
-                    <a href="https://github.com/WAbby404" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-github fa-2x fa-footer"></i></a>
-                    <a href="https://www.linkedin.com/in/abbywaddell4042/" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-linkedin fa-2x fa-footer"></i></a>
-                    <a href="https://wabby404.github.io/portfolio-redo/" target="_blank" rel="noopener noreferrer"><i className="fa-solid fa-arrow-up-right-from-square fa-2x fa-footer"></i></a>
+                    <a href="https://github.com/WAbby404" target="_blank" rel="noopener noreferrer" title="Github" aria-label="Github">
+                        <i className="fa-brands fa-github fa-2x fa-footer"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/abbywaddell4042/" target="_blank" rel="noopener noreferrer" title="Linkedin" aria-label="Linkedin">
+                        <i className="fa-brands fa-linkedin fa-2x fa-footer"></i>
+                    </a>
+                    <a href="https://wabby404.github.io/portfolio-redo/" target="_blank" rel="noopener noreferrer" title="Portfolio Website" aria-label="Portfolio">
+                        <i className="fa-solid fa-arrow-up-right-from-square fa-2x fa-footer"></i>
+                    </a>
                 </div>
             </div>
         </footer>

@@ -11,7 +11,7 @@ function Navbar() {
         <nav>
             <div className="nav__wrapper">
                 <Link className="nav__logo" to="/">
-                    <img src={logo} alt="Eat This logo"/>
+                    <img className="nav__logo__img" src={logo} alt="Eat This logo"/>
                     <h2>Eat This</h2>
                 </Link>
                 <i className={clicked ? "icon fa-solid fa-xmark fa-2x" : "icon fa-solid fa-bars fa-2x"}
