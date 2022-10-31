@@ -20,6 +20,9 @@ function List(props) {
     }, [items])
 
     const addItem = () => {
+      if (newItem === ""){
+        return;
+      }
         const newestItem={
           id: 1 + Math.random(),
           value: newItem

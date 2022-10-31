@@ -24,6 +24,12 @@ const Recipe = (props) => {
         }
     }, [showCheck, overlayCard]);
 
+    const setOverlayPress = (e) => {
+        if(e.key === 'Enter'){
+            setOverlayCard(!overlayCard)
+        }
+    }
+
     const transferMeal = (meal, weekDay, mealTime) => {
         props.transferMeal(meal, weekDay, mealTime);
     }
@@ -37,7 +43,7 @@ const Recipe = (props) => {
 
     return(
         <>
-            <div className="recipe-card" onClick={() => setOverlayCard(!overlayCard) }>
+            <div className="recipe-card" tabindex="0" role="button" onClick={() => setOverlayCard(!overlayCard)} onKeyPress={(e) => setOverlayPress(e)}>
                 <div className="recipe__text">
                     <h2>{props.data.recipe.label}</h2>
                     <h3 className="recipe__info">{props.data.recipe.totalTime === 0 ? '20 min' : `${props.data.recipe.totalTime} min`} | {parseInt(props.data.recipe.calories)} Cal | Yields {props.data.recipe.yield}</h3>
@@ -47,7 +53,7 @@ const Recipe = (props) => {
             { overlayCard && 
             <div className="overlay" >
                 <div className="overlay__card">
-                    <i className="fa-solid fa-square-xmark fa-2x overlay__x" onClick={() => setOverlayCard(!overlayCard)}></i>
+                    <i className="fa-solid fa-square-xmark fa-2x overlay__x" tabindex="0" onClick={() => setOverlayCard(!overlayCard)} onKeyPress={(e) => setOverlayPress(e)}></i>
                     <div className="overlay__img">
                         <img src={props.data.recipe.image} alt={props.data.recipe.label}/>
                     </div>
