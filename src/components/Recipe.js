@@ -5,24 +5,18 @@ import '../styles/Recipe.scss';
 const Recipe = (props) => {
     const [overlayCard, setOverlayCard] = useState(false);
     const [showMealPlan, setShowMealPlan] = useState(false);
-    const [showCheck, setShowCheck] = useState(false);
     const [added, setAdded] = useState(false);
-    // const [showIngredients, setShowIngredients] = useState(true);
 
     useEffect(() => {
         if(overlayCard === true){
             document.body.style.overflow = 'hidden';
         } else {
+            setAdded(false);
+            setShowMealPlan(false);
             document.body.style.overflow = 'visible';
         }
         
-        if(showCheck === true){
-            const interval = setInterval(() => {
-                setShowCheck(false);
-            }, 5000);
-            return () => clearInterval(interval);
-        }
-    }, [showCheck, overlayCard]);
+    }, [overlayCard]);
 
     const setOverlayPress = (e) => {
         if(e.key === 'Enter'){
@@ -36,7 +30,6 @@ const Recipe = (props) => {
 
     const transferIngredients = (ingredients) => {
         setAdded(true);
-        setShowCheck(true);
         props.transferIngredients(ingredients);
     }
 
