@@ -5,16 +5,17 @@
     background-image:
         linear-gradient(to top, rgba(27, 27, 29, 0.705), rgba(255, 255, 255, 0)),
         url('../images/hero.webp');
+    background-color: aquamarine;
     background-repeat: no-repeat;
-    width: 100%;
     background-size: cover;
     z-index: -1;
+    min-height: 100%;
 }
 
 .hero__wrapper{
     @include wrapper;
     @include flex(center, column);
-    padding: 150px 0 13% 0;
+    padding: 225px 0;
 }
 
 // Hero Text
@@ -68,14 +69,11 @@
             linear-gradient(to top, rgba(27, 27, 29, 0.705), rgba(255, 255, 255, 0)),
             url('../images/hero.webp');
         background-repeat: no-repeat;
-        width: 100%;
         background-size: cover;
         z-index: -1;
-        height: 81.7vh;
-        min-height: 350px;
+        min-height: 100vh;
     }
     
-
     .hero__wrapper{
         padding-top: 15vh; 
     }
@@ -94,9 +92,6 @@
 }
 
 @media (max-width: 400px){
-    .hero{
-        height: 78vh;
-    }
     .hero__title{
         font-size: 5rem;
     }
